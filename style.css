@@ -65,3 +65,7 @@ form label {
   height: 25px;
   width: 40px;
 }
+
+.disable {
+  visibility: hidden;
+}

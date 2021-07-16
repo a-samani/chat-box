@@ -6,6 +6,9 @@ var mesgs = [
   { user: "reza", text: "asfjhdjkfkadskfhadshfjkasl", inchat: false },
 ];
 var chat_box = document.getElementById("chatbox");
+var clean_Btn = document.getElementById("clear")
+// // if it's admin 
+// clean_Btn.classList.remove("disable")
 
 for (var i in mesgs) {
   var node = document.createElement("p");
@@ -28,6 +31,14 @@ function send (){
   }
   
 }
+function clear (){
+  
+  while (chat_box.hasChildNodes()) {  
+    chat_box.removeChild(chat_box.firstChild);
+  } 
+  mesgs.length =0
+  // clear list of msg from server
+}
 
 document.getElementById("submsg").addEventListener("click", send);
 document.getElementById("msg").addEventListener("keypress",function(e){
@@ -36,3 +47,4 @@ document.getElementById("msg").addEventListener("keypress",function(e){
     send()
 }
 })
+clean_Btn.addEventListener("click",clear)
