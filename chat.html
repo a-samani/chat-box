@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,25 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script></script>
     <title>nemikhad</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="main">
-      <div id="chat">
-        <p class="chat">Chat</p>
-      </div>
-      <!-- showing users msg -->
-      <div id="chatbox"></div>
-      <!-- sending msg -->
-      <div id="input">
-        <form action="" name="chatbox">
-          <input type="text" name="msg" id="msg" autocomplete="off" />
-        </form>
-        <button class="subbt" type="submit" name="submsg" id="submsg" value="Send">
+        <div id="chat">
+            <p class="chat">Chat</p>
+        </div>
+        <!-- showing users msg -->
+        <div id="chatbox"></div>
+        <!-- sending msg -->
+        <div id="input">
+            <form action="" name="chatbox">
+                <input type="text" name="msg" id="msg" autocomplete="off" />
+            </form>
+            <button class="subbt" type="submit" name="submsg" id="submsg" value="Send">
           send
         </button>
-        <button class="btn " id="clear"><i class="fa fa-trash"></i></button>
-      </div>
+            <button class="btn " id="clear"><i class="fa fa-trash"></i></button>
+        </div>
     </div>
     <script src="script.js"></script>
-  </body>
+    <a href='#' onclick='downloadCSV({ filename: "stock-data.csv" });'>Download CSV</a>
+
+</body>
+
 </html>
